@@ -1,4 +1,4 @@
-# lambdanow-heatmaptracker
+# heatmaptracker
 In order to construct a heat map, this piece of pure javascript code sends mouse coordinates in intervals to the backend`s data-api.
 
 Add the snippet to your index.html just before the closing ```</head>``` tag.
