@@ -9,13 +9,13 @@
     function init () {
       var body = document.getElementsByTagName('body')[0];
       addEvent(body, 'mousemove', trackCoord);
-      intervalFunc = setInterval(sendEvent, 1000);
+      intervalFunc = setInterval(sendEvent, 100);
     }
 
     function sendEvent () {
       var url = 'https://api.realtimeheatmap.com';
-      var token = 'ef15682f3c';
-      var collectionUrl = [url, '1', 'channels', 'heatmapchannel' ].join('/');
+      var token = '7294232472';
+      var collectionUrl = [url, '1', 'channels', 'heatmapchannel1' ].join('/');
       var xhttp;
       if (w.XMLHttpRequest) {
         xhttp = new XMLHttpRequest();
@@ -27,6 +27,7 @@
       xhttp.open("POST", collectionUrl, true);
       xhttp.setRequestHeader("Content-Type", "application/json");
       xhttp.setRequestHeader("X-AUTH-TOKEN", token);
+      xhttp.setRequestHeader("Accept", "application/json");
 
       var jsonBlob = JSON.stringify(objToSend);
       if (Object.keys(objToSend).length !== 0) {
@@ -45,6 +46,11 @@
         yMax: maxY,
         timestamp: new Date().getTime()
       };
+      // console.log('view: ', objToSend.view);
+      // console.log('x: ', objToSend.x);
+      // console.log('y: ', objToSend.y);
+      // console.log('xMax: ', objToSend.xMax);
+      // console.log('yMax: ', objToSend.yMax);
     }
 
     function addEvent (elm, evType, fn, useCapture) {
