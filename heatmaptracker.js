@@ -13,9 +13,9 @@
     }
 
     function sendEvent () {
-      var url = 'https://data-f539adb0-d76a-4c53-845a-58e61308c79a.lambdanow.com';
+      var url = 'https://api.realtimeheatmap.com';
       var token = 'ef15682f3c';
-      var collectionUrl = [url, '1', 'channels', 'heatmapchannel9' ].join('/');
+      var collectionUrl = [url, '1', 'channels', 'heatmapchannel' ].join('/');
       var xhttp;
       if (w.XMLHttpRequest) {
         xhttp = new XMLHttpRequest();
@@ -23,7 +23,7 @@
         // code for IE6, IE5
         xhttp = new ActiveXObject("Microsoft.XMLHTTP");
       }
-
+      // true for its third parameter to indicate that the request should be handled asynchronously
       xhttp.open("POST", collectionUrl, true);
       xhttp.setRequestHeader("Content-Type", "application/json");
       xhttp.setRequestHeader("X-AUTH-TOKEN", token);

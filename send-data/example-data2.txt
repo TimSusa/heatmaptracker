@@ -1,0 +1,15 @@
+view:  /
+x:  263
+y:  182
+xMax:  1265
+yMax:  2526
+view:  /
+x:  18
+y:  15
+xMax:  1265
+yMax:  2526
+view:  /
+x:  130
+y:  225
+xMax:  1265
+yMax:  2526

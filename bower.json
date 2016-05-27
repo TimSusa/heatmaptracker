@@ -1,12 +1,11 @@
 {
-  "name": "lambdanow-heatmaptracker",
-  "homepage": "https://github.com/LambdaNow/lambdanow-heatmaptracker",
+  "name": "heatmaptracker",
+  "main": "heatmaptracker.js",
+  "homepage": "https://github.com/TimSusa/heatmaptracker",
   "authors": [
     "TimSusa <timsusa@altus-insight.de>"
   ],
-  "description": "In order to construct a heat map, this piece of pure javascript code sends mouse coordinates in time intervals to the backends data-api.",
-  "main": "heatmaptracker.min.js",
-  "moduleType": [],
+  "description": "",
   "license": "MIT",
   "ignore": [
     "**/.*",
