@@ -10,7 +10,7 @@ client = DataClient('https://api.realtimeheatmap.com/1', '7294232472')
 def timestamp_millis():
     return int((datetime.now() - datetime(1970, 1, 1)).total_seconds() * 1000)
 
-f = open('example-data.txt', "r")
+f = open('example-data2.txt', "r")
 lines = f.readlines()
 blob = {}
 blob_list = []
@@ -51,16 +51,11 @@ while True:
         count = count + 1
 
         if count % 5 == 0:
-            sleep(0.01)
-            # timestamp = datetime.now().total_seconds()*1000
-            #
             print blob
             for thing in dothis:
-
-                sleep(0.01)
                 try:
                     blob['timestamp'] = timestamp_millis()
-                    result = client.send('heatmapchannel', blob)
+                    result = client.send('heatmapchannel1', blob)
                     print (thing, " ", blob)
 
                 except RuntimeError as e:
