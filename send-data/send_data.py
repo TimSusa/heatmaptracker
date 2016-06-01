@@ -26,7 +26,7 @@ blob = {
     'timestamp': timestamp_millis()
 }
 
-dothis = range(30)
+dothis = range(50)
 
 print "Send data without any end"
 while True:
