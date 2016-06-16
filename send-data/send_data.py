@@ -4,7 +4,7 @@ from lambdanow.data import DataClient
 from datetime import datetime
 from time import sleep
 
-client = DataClient('https://api.realtimeheatmap.com/1', '7294232472')
+client = DataClient('https://api.realtimeheatmap.com/1', 'f7e6d57452')
 
 
 def timestamp_millis():
@@ -26,7 +26,7 @@ blob = {
     'timestamp': timestamp_millis()
 }
 
-dothis = range(50)
+dothis = range(30)
 
 print "Send data without any end"
 while True:
