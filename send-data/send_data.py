@@ -1,5 +1,6 @@
 # import random
 from lambdanow.data import DataClient
+
 # import time
 from datetime import datetime
 from time import sleep
