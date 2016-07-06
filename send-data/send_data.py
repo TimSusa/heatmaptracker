@@ -4,7 +4,7 @@ from lambdanow.data import DataClient
 from datetime import datetime
 from time import sleep
 
-client = DataClient('https://api.realtimeheatmap.com/1', 'f7e6d57452')
+client = DataClient('https://api.realtimeheatmap.com/1', '7f4e804948')
 
 
 def timestamp_millis():
